@@ -1,0 +1,79 @@
+{
+  "name": "prompt-wizard",
+  "version": "1.0.0",
+  "description": "Transform user requirements into effective prompts using best practices from 10 leading Prompt Engineering resources",
+  "emoji": "🧙",
+  "category": "knowledge",
+  "author": "OpenClaw Agent",
+  "created": "2026-03-11",
+  "homepage": "https://www.promptingguide.ai/",
+  "repository": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+  "requires": {},
+  "dependencies": [],
+  "install": [],
+  "skills": [
+    "prompt-structure",
+    "few-shot-prompting",
+    "chain-of-thought",
+    "prompt-chaining",
+    "role-prompting",
+    "rag-prompting"
+  ],
+  "resources": [
+    {
+      "name": "Anthropic Prompting Guide",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+      "type": "official"
+    },
+    {
+      "name": "OpenAI Prompting Guide",
+      "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+      "type": "official"
+    },
+    {
+      "name": "GitHub Prompt Engineering Guide",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "type": "open-source"
+    },
+    {
+      "name": "OpenAI Cookbook",
+      "url": "https://developers.openai.com/cookbook",
+      "type": "code-examples"
+    },
+    {
+      "name": "Hugging Face Prompting Guide",
+      "url": "https://huggingface.co/docs/transformers/tasks/prompting",
+      "type": "open-source"
+    },
+    {
+      "name": "Learn Prompting",
+      "url": "https://learnprompting.org",
+      "type": "course"
+    },
+    {
+      "name": "DeepLearningAI Course",
+      "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers",
+      "type": "course"
+    },
+    {
+      "name": "Stanford Lecture",
+      "url": "https://youtube.com/watch?v=SXpJ9EmG3s4",
+      "type": "video"
+    },
+    {
+      "name": "FlowGPT",
+      "url": "https://flowgpt.com",
+      "type": "templates"
+    },
+    {
+      "name": "PromptBase",
+      "url": "https://promptbase.com",
+      "type": "marketplace"
+    }
+  ],
+  "openclaw": {
+    "emoji": "🧙",
+    "requires": {},
+    "install": []
+  }
+}
