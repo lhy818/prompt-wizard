@@ -2,24 +2,27 @@
 
 **Transform any requirement into an effective, well-structured prompt.**
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-orange)](https://github.com/openclaw/openclaw)
+
 > Prompt engineering isn't magic. It's structured thinking.
 
 ---
 
-## Overview
+## 🌟 Overview
 
-This skill consolidates knowledge from 10 world-class Prompt Engineering resources into a single, actionable guide. When you need to craft a prompt for any AI model (Claude, GPT, LLaMA, etc.), use this skill to ensure you're following best practices.
+This skill consolidates knowledge from **10 world-class Prompt Engineering resources** into a single, actionable guide. When you need to craft a prompt for any AI model (Claude, GPT, LLaMA, etc.), use this skill to ensure you're following best practices.
 
-## What It Does
+## ✨ Features
 
-- **Structured Framework**: 6-step prompt template (Role, Task, Context, Constraints, Format, Examples)
-- **Model-Specific Guidance**: Tailored advice for Claude, GPT, and open-source models
-- **Advanced Techniques**: Chain-of-Thought, Few-Shot, Prompt Chaining, RAG
-- **Common Patterns**: Ready-to-use templates for code generation, summarization, analysis, etc.
-- **Troubleshooting**: Debug common prompt issues
-- **Optimization Workflow**: Systematic approach to improving prompts
+- **Structured Framework** - 6-step prompt template (Role, Task, Context, Constraints, Format, Examples)
+- **Model-Specific Guidance** - Tailored advice for Claude, GPT, and open-source models
+- **Advanced Techniques** - Chain-of-Thought, Few-Shot, Prompt Chaining, RAG
+- **Common Patterns** - Ready-to-use templates for code generation, summarization, analysis, etc.
+- **Troubleshooting** - Debug common prompt issues
+- **Optimization Workflow** - Systematic approach to improving prompts
 
-## How to Use
+## 🚀 Quick Start
 
 ### For AI Agents
 
@@ -40,7 +43,7 @@ When you need help with prompting:
 - **"My prompt isn't working well"** - Share it, and I'll debug and improve it
 - **"How should I ask ChatGPT to..."** - Get specific guidance for your use case
 
-## Core Framework
+## 📦 Core Framework
 
 Every effective prompt should have:
 
@@ -62,7 +65,7 @@ Task: Review the provided code snippet and identify:
 - Code style improvements
 - Security concerns
 
-Context: This code will be used in production environment with these requirements:
+Context: This code will be used in a production environment with these requirements:
 - Must handle 10k+ requests per second
 - Memory usage under 512MB
 - Python 3.11+
@@ -105,7 +108,7 @@ Output:
    **Reason**: Improves code documentation and IDE support
 ```
 
-## Model-Specific Guidance
+## 🎯 Model-Specific Guidance
 
 ### Claude (Anthropic)
 
@@ -139,14 +142,8 @@ Output:
 **Structure:**
 ```python
 messages = [
-    {
-        "role": "developer",
-        "content": "You are a [ROLE] that [PURPOSE]. Follow these rules: [RULES]"
-    },
-    {
-        "role": "user",
-        "content": "[TASK with context and constraints]"
-    },
+    {"role": "developer", "content": "You are a [ROLE] that [PURPOSE]. Follow these rules: [RULES]"},
+    {"role": "user", "content": "[TASK with context and constraints]"},
 ]
 ```
 
@@ -160,7 +157,7 @@ messages = [
 - Use structured format (templates, delimiters)
 - Consider instruction-tuned vs base models
 
-## Advanced Techniques
+## 🛠️ Advanced Techniques
 
 ### 1. Chain-of-Thought (CoT)
 
@@ -228,7 +225,7 @@ Your constraints: [What to avoid]
 3. Ask model to use only provided information
 4. Cite sources in output
 
-## Common Prompt Patterns
+## 📋 Common Prompt Patterns
 
 | Use Case | Key Elements |
 |-----------|-------------|
@@ -240,7 +237,7 @@ Your constraints: [What to avoid]
 
 See `SKILL.md` for detailed templates for each pattern.
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 | Issue | Solution |
 |--------|----------|
@@ -249,7 +246,7 @@ See `SKILL.md` for detailed templates for each pattern.
 | Hallucinating | Add "use only provided information", use RAG |
 | Wrong format | Specify format exactly, use templates, provide examples |
 
-## Optimization Workflow
+## 📊 Optimization Workflow
 
 1. **Draft** - Start simple, use the framework
 2. **Test** - Run with diverse examples
@@ -257,7 +254,7 @@ See `SKILL.md` for detailed templates for each pattern.
 4. **Iterate** - Repeat until satisfied
 5. **Document** - Save successful prompts
 
-## Resources
+## 📚 Resources
 
 This skill consolidates knowledge from:
 
@@ -274,7 +271,7 @@ This skill consolidates knowledge from:
 | FlowGPT | Templates | Ready-to-use prompts |
 | PromptBase | Marketplace | Industry examples |
 
-## Examples
+## 💡 Examples
 
 ### Example 1: Code Review Request
 
@@ -299,16 +296,6 @@ Constraints:
 - Consider maintainability and readability
 
 Format: Structured list with severity levels (Critical/High/Medium/Low)
-
-Examples:
-
-Good feedback:
-"Line 45: SQL injection risk. Use parameterized queries instead."
-"Line 78: Missing exception handling for file operations."
-
-Bad feedback:
-"Your code could be better."
-"Consider using more Pythonic patterns."
 ```
 
 ### Example 2: Document Summarization
@@ -332,7 +319,6 @@ Constraints:
 - Maximum 2 pages
 - Use bullet points for readability
 - Focus on actionable insights
-- Avoid detailed methodology
 
 Format:
 1. Executive Summary (3-4 sentences)
@@ -340,41 +326,17 @@ Format:
 3. Recommendations (3-5 bullets)
 4. Next Steps (timeline, owners)
 5. Risks and Mitigations (table)
-
-Examples:
-
-Executive Summary:
-"This report analyzed the proposed cloud migration. Key finding: 30% cost reduction achievable with 12-month timeline. Recommendation: Proceed with phased approach starting Q2."
-
-Key Findings:
-• Current infrastructure costs $2.5M/year
-• Cloud migration reduces to $1.75M/year
-• Migration cost: $500K
-• ROI achieved in 8 months
-• Minimal business disruption expected
 ```
 
-## Installation
-
-No installation required. This is a knowledge-based skill.
-
-Simply reference it when generating prompts:
-
-```
-Read: ~/.openclaw/workspace/skills/prompt-wizard/SKILL.md
-Apply: Framework to user's requirement
-Generate: Structured, effective prompt
-Explain: Reasoning behind structure
-```
-
-## Files
+## 📁 Files
 
 - `SKILL.md` - Main skill documentation
 - `README.md` - This file
 - `_meta.json` - Skill metadata
+- `LICENSE` - MIT License
 - `scripts/` - Reserved for future tools
 
-## Contributing
+## 🤝 Contributing
 
 This skill is based on publicly available Prompt Engineering resources. To improve:
 
@@ -383,12 +345,23 @@ This skill is based on publicly available Prompt Engineering resources. To impro
 3. Add troubleshooting scenarios
 4. Contribute example prompts
 
-## License
+## 📄 License
 
-Consolidated from open sources. Use freely.
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## 🙏 Credits
+
+Consolidated from 10 world-class Prompt Engineering resources by AI agent community.
+
+**Original sources:**
+- Anthropic: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+- OpenAI: https://developers.openai.com/api/docs/guides/prompt-engineering
+- Dair.ai: https://github.com/dair-ai/Prompt-Engineering-Guide
+- DeepLearning.AI: https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers
+- And more...
 
 ---
 
-**Created by OpenClaw Agent based on 10 world-class Prompt Engineering resources.**
+**Created by [lhy818](https://github.com/lhy818) based on 10 world-class Prompt Engineering resources.**
 
-*Transform requirements into effective prompts, every time.*
+*Transform requirements into effective prompts, every time.* 🧙
