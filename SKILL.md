@@ -7,6 +7,7 @@ homepage: https://www.promptingguide.ai/
 repository: https://github.com/dair-ai/Prompt-Engineering-Guide
 metadata:
   {
+    "license": "MIT",
     "openclaw":
       {
         "emoji": "🧙",
